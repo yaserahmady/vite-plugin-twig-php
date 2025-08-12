@@ -1,0 +1,6 @@
+{
+  "page": {
+    "title": "Dynamic Page from JSON",
+    "content": "This page is rendered from JSON data"
+  }
+}

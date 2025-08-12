@@ -1,0 +1,14 @@
+{
+  "name": "buio/vite-plugin-twig-php",
+  "autoload": {
+    "psr-4": {
+      "Buio\\": "src/php/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "ext-json": "*",
+    "react/http": "^1.11.0",
+    "twig/twig": "^3.21.1"
+  }
+}

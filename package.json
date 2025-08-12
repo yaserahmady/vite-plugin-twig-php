@@ -1,0 +1,52 @@
+{
+  "name": "@buio/vite-plugin-twig-php",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/vite-plugin.cjs",
+  "module": "./dist/vite-plugin.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin.mjs",
+      "require": "./dist/vite-plugin.cjs"
+    },
+    "./twig-renderer": {
+      "import": "./dist/twig-renderer.mjs",
+      "require": "./dist/twig-renderer.cjs"
+    },
+    "./utils": {
+      "import": "./dist/utils.mjs",
+      "require": "./dist/utils.cjs"
+    },
+    "./php/*": "./dist/php/*",
+    "./config.schema.json": "./dist/config.schema.json"
+  },
+  "files": [
+    "dist",
+    "vendor",
+    "config.schema.json"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:dev": "vite --config tests/vite.config.js",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.24.0",
+    "@zackad/prettier-plugin-twig": "^0.16.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.2",
+    "vite-plugin-static-copy": "^3.1.1"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "execa": "^9.6.0",
+    "fs-extra": "^11.3.1",
+    "get-port": "^7.1.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.3.2",
+    "sleep-promise": "^9.1.0",
+    "vituum": "^1.2.0"
+  }
+}

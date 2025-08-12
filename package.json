@@ -1,5 +1,5 @@
 {
-  "name": "@buio/vite-plugin-twig-php",
+  "name": "@buiostudio/vite-plugin-twig-php",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/vite-plugin.cjs",

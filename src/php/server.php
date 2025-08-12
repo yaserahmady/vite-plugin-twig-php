@@ -11,6 +11,7 @@ use React\Promise\Promise;
 use React\Socket\SocketServer;
 
 require_once dirname(__DIR__, 2) . "/vendor/autoload.php";
+require_once __DIR__ . "/TwigRenderer.php";
 
 // CLI args
 $port = $argv[1];
